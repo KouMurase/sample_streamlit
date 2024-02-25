@@ -1,10 +1,11 @@
+import plotly
+import datetime as dt
 import plotly.express as px
 import pandas as pd
-from datetime import datetime#, timedelta
 import streamlit as st
+from datetime import datetime#, timedelta
+
 #import matplotlib.pyplot as plt 
-#import plotly
-#import datetime as dt
 
 data = pd.read_csv("./input/data_2024.csv", encoding="shift-jis", header=2)
 data = data.drop(data.index[0:2], axis=0)
