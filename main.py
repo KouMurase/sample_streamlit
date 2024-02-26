@@ -15,9 +15,9 @@ import base64
 
 def main():
 
-    img = Image.open("./app/static/impala.png")
+    #img = Image.open("./app/static/impala.png")
 
-    st.image(img, caption='icon', use_column_width=False, width=150)
+    #st.image(img, caption='icon', use_column_width=False, width=150)
 
     image_bytes = Path("./app/static/impala.png").read_bytes()
     image_encoded = base64.b64encode(image_bytes).decode()
