@@ -19,7 +19,7 @@ def main():
 
     #st.image(img, caption='icon', use_column_width=False, width=150)
 
-    image_bytes = Path("./app/static/impala.png").read_bytes()
+    image_bytes = Path("./input/impala.png").read_bytes()
     image_encoded = base64.b64encode(image_bytes).decode()
 
     # HTML埋め込み
@@ -36,6 +36,7 @@ def main():
         """
         +f"""
         <p class='my-text'>Hello World! <br>
+        <img src="./input/impala.png" height="150" width="150" style="vertical-align:middle;"></p>
         <img src="data:image/png;base64,{image_encoded}" height="150" width="150" style="vertical-align:middle;"></p>
         </p>
         """, unsafe_allow_html=True)
