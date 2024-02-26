@@ -41,7 +41,7 @@ def run():
         <img src=".app/static/impala.png" height="150" width="150" style="vertical-align:middle;">
         </p>
         """, unsafe_allow_html=True)
-        from app import main
+        from main import main
         main()
         
     elif authentication_status is False:
