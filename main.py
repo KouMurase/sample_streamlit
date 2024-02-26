@@ -36,7 +36,7 @@ def main():
         """
         +f"""
         <p class='my-text'>Hello World! <br>
-        <img src="./app/input/impala.png" height="150" width="150" style="vertical-align:middle;"></p>
+        <img src="./app/input/impala.png" height="150" width="150" style="vertical-align:middle;">
         <img src="data:image/png;base64,{image_encoded}" height="150" width="150" style="vertical-align:middle;"></p>
         </p>
         """, unsafe_allow_html=True)
