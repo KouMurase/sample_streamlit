@@ -41,7 +41,7 @@ def main():
         """, unsafe_allow_html=True)
 
 
-    data = pd.read_csv("./input/data_20240226.csv", encoding="shift-jis", header=2)
+    data = pd.read_csv("./input/data_20240329.csv", encoding="shift-jis", header=2)
     data = data.drop(data.index[0:2], axis=0)
 
     cols = [c for c in data.columns if ".1" not in c and ".2" not in c and ".3" not in c]
